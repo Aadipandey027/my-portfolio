@@ -59,7 +59,7 @@
         </a>
     </nav>
 
-    <!-- Hero Section (Updated with Photo) -->
+    <!-- Hero Section -->
     <header class="min-h-screen flex flex-col justify-center items-center px-6 pt-28 relative overflow-hidden">
         <!-- Background glows -->
         <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl -z-10"></div>
@@ -86,9 +86,8 @@
                     Cloud Engineer & Full-Stack Developer. I bridge the gap between secure cloud infrastructure and scalable web logic.
                 </h2>
                 
-                <!-- Buttons - Updated with Resume -->
+                <!-- Buttons -->
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-                    <!-- Download Resume Button -->
                     <a href="Aditya_final_resume.pdf" download class="bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-sky-500/20 transition-all duration-300 flex items-center justify-center">
                         <i class="fa-solid fa-download mr-2 text-sm"></i> Download Resume
                     </a>
@@ -195,29 +194,44 @@
     </section>
 
     <!-- Selected Works / Projects Section -->
-
     <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
         <div class="text-center mb-16">
             <span class="text-xs font-bold uppercase tracking-widest text-purple-400 block mb-2">Portfolio</span>
             <h2 class="text-3xl font-bold">Featured Projects</h2>
         </div>
 
-        <!-- FIX: grid-cols-1 md:grid-cols-2 gap-8 se spacing aur alignment ekdum sahi ho jayegi -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             <!-- Project 1: E-Paan Store -->
             <div class="glass-card rounded-2xl overflow-hidden flex flex-col group hover:border-slate-700 transition duration-300" data-aos="zoom-in" data-aos-delay="100">
                 <div class="p-8 flex-grow">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold group-hover:text-sky-400 transition">E-Paan Store</h3>
-                        <span class="text-xs font-semibold bg-sky-500/20 text-sky-400 px-2 py-0.5 rounded">Internship</span>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold group-hover:text-sky-400 transition">PaanParadise (E-Paan Store)</h3>
+                        <span class="bg-sky-500/10 text-sky-400 border border-sky-500/20 text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Group Project</span>
                     </div>
-                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Developed a robust digital commerce platform tailored for specialized retail during my tenure at FROYO Technologies. Architected scalable transaction logic and dynamic inventory management.</p>
-                    <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Django</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">MySQL</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">JavaScript</span>
+            
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                        A full-stack e-commerce web platform developed by <b>Team WE4 AI</b> for ordering e-pan products online. Features dynamic product filtering, real-time AJAX cart management, multi-address checkout, and route-protection middlewares.
+                    </p>
+            
+                    <ul class="text-xs text-slate-400 space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Custom authentication & referrer-based security middlewares</li>
+                        <li>AJAX-driven real-time cart and quantity updates</li>
+                        <li>Multi-address management & automated order tracking</li>
+                    </ul>
+            
+                    <div class="flex flex-wrap gap-2 text-xs mb-6">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Django 5.0</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">MySQL</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">JavaScript / jQuery</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Bootstrap 5</span>
+                    </div>
+            
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <a href="https://github.com/Aadipandey027/PaanParadise" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 hover:text-sky-300 transition">
+                            <i class="fab fa-github text-sm"></i> View Source Code &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -225,13 +239,32 @@
             <!-- Project 2: Real Estate Portal -->
             <div class="glass-card rounded-2xl overflow-hidden flex flex-col group hover:border-slate-700 transition duration-300" data-aos="zoom-in" data-aos-delay="200">
                 <div class="p-8 flex-grow">
-                    <h3 class="text-xl font-bold group-hover:text-indigo-400 transition">Real Estate Portal</h3>
-                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Built a comprehensive property listing platform featuring advanced search filters, geographic query processing, and property agent dashboard workflows.</p>
-                    <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Django</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">MySQL</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Bootstrap</span>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold group-hover:text-indigo-400 transition">Real Estate Portal</h3>
+                        <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Full-Stack Web App</span>
+                    </div>
+            
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                        Built a comprehensive property listing platform featuring advanced search filters, geographic query processing, and property agent dashboard workflows.
+                    </p>
+            
+                    <ul class="text-xs text-slate-400 space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Advanced property search & filtering (Location, Price, Type)</li>
+                        <li>Dedicated Agent Dashboard for property management</li>
+                        <li>Role-based user access & inquiry management system</li>
+                    </ul>
+            
+                    <div class="flex flex-wrap gap-2 text-xs mb-6">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Django</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">MySQL</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Bootstrap</span>
+                    </div>
+            
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <a href="https://github.com/Aadipandey027" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition">
+                            <i class="fab fa-github text-sm"></i> View Source Code &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -239,12 +272,30 @@
             <!-- Project 3: Desktop Voice Assistant -->
             <div class="glass-card rounded-2xl overflow-hidden flex flex-col group hover:border-slate-700 transition duration-300" data-aos="zoom-in" data-aos-delay="300">
                 <div class="p-8 flex-grow">
-                    <h3 class="text-xl font-bold group-hover:text-purple-400 transition">Desktop Voice Assistant</h3>
-                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Created a fully tailored Python assistant engineered for voice-controlled workflows, custom web searching, and modular desktop system automation.</p>
-                    <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">SpeechRecognition</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Pyttsx3</span>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold group-hover:text-purple-400 transition">Team WE4 AI Desktop Voice Assistant</h3>
+                        <span class="bg-purple-500/10 text-purple-400 border border-purple-500/20 text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Group Project</span>
+                    </div>
+
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">An intelligent desktop voice assistant built with Python to automate everyday OS tasks. Features voice recognition, text-to-speech engine, automated messaging, web browsing, and system control via voice commands.</p>
+                    
+                    <ul class="text-xs text-slate-400 space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Hands-free OS navigation & app launching</li>
+                        <li>Voice-automated messaging & web searching</li>
+                        <li>Real-time speech-to-text processing</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2 text-xs mb-6">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">SpeechRecognition</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Pyttsx3</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">OS Automation</span>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <a href="https://github.com/Aadipandey027/Jarvis-Desktop-Voice-Assistant" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300 transition">
+                            <i class="fab fa-github text-sm"></i> View Source Code &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -252,12 +303,32 @@
             <!-- Project 4: Previous Year Question Portal -->
             <div class="glass-card rounded-2xl overflow-hidden flex flex-col group hover:border-slate-700 transition duration-300" data-aos="zoom-in" data-aos-delay="400">
                 <div class="p-8 flex-grow">
-                    <h3 class="text-xl font-bold group-hover:text-sky-400 transition">Previous Year Question Portal</h3>
-                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Developed a resource-sharing portal featuring category-wise filtering mechanisms and seamless file download functionality.</p>
-                    <div class="flex flex-wrap gap-2 text-xs">
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Python</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">Django</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300">MySQL</span>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-bold group-hover:text-sky-400 transition">Previous Year Question Portal</h3>
+                        <span class="bg-sky-500/10 text-sky-400 border border-sky-500/20 text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Web App</span>
+                    </div>
+            
+                    <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+                        Developed a centralized resource-sharing portal designed to help students access course materials, past exam papers, and solution sets efficiently.
+                    </p>
+            
+                    <ul class="text-xs text-slate-400 space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Subject & semester-wise dynamic paper filtering</li>
+                        <li>Secure document storage & direct PDF download stream</li>
+                        <li>Admin control panel for resource management</li>
+                    </ul>
+            
+                    <div class="flex flex-wrap gap-2 text-xs mb-6">
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Python</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Django</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">MySQL</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700/50">Bootstrap</span>
+                    </div>
+            
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <a href="https://github.com/Aadipandey027" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 hover:text-sky-300 transition">
+                            <i class="fab fa-github text-sm"></i> View Source Code &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -283,7 +354,6 @@
         &copy; 2026 Aditya Kumar Pandey. All rights reserved.
     </footer>
 
-    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -293,8 +363,5 @@
             once: true
         });
     </script>
-</body>
-</html>
-
 </body>
 </html>
